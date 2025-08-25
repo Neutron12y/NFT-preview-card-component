@@ -1,0 +1,195 @@
+:root { 
+    --cir-Blue-500: hsl(215, 51%, 70%);
+--cir-Cyan-400: hsl(178, 100%, 50%);
+
+
+--cir-Blue-950-main-BG: hsl(217, 54%, 11%);
+--cir-Blue-900-card-BG: hsl(216, 50%, 16%);
+--cir-Blue-800-line: hsl(215, 32%, 27%);
+--cir-White: hsl(0, 0%, 100%);
+}
+
+*
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif;
+      min-height: 100vh;
+        display: grid;
+    place-content: center;
+    place-items: center;
+    margin: 1rem;
+    background-color: var(--cir-Blue-950-main-BG);
+margin-left: 10px;
+        margin-right: 10px;
+}
+
+.container {
+  height: 430px;
+  width: 270px;
+background-color: var(--cir-Blue-900-card-BG);
+padding : 30px;
+font-size: 16px;
+border-radius: 1rem;
+box-shadow: 14px 15px 15px 13px rgba(14, 4, 4, 0.2);
+padding-top:1.2rem ;
+padding-bottom:1.7rem ;
+padding-left: 1rem;
+padding-right: 1rem;
+display: flex;
+justify-content: center;
+flex-direction: column;
+gap: 0.1rem;
+color: var(--cir-Blue-500);
+position: relative;
+}
+
+@media (min-width: 600px) {
+    .container {
+        margin: 4px;
+    }
+}
+
+
+.big img {
+    position: relative;
+    display: inline-block;
+    border-radius: .5rem;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 1;
+   
+    transition: background-color 0.6s ease-in;
+
+}
+
+
+.small {
+    position: absolute;
+    display: inline-block;
+margin: 0%;
+padding: 0%;
+top: 48%;
+left: 50%;
+transform:translate(-50%, 50%);
+right: 0;
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+}
+
+
+/* Helps add color to the background of the picture hover effect */
+.eth {
+    position: relative;
+ background-color:rgba(0, 255, 255, 0.9);
+transition: opacity 0.5s ease-in-out;
+ border-radius: .5rem;
+ overflow: hidden;
+}
+
+
+.eth:hover .small {
+    opacity: 1;
+     
+}
+
+.eth:hover {
+    border-radius: 1rem;
+    cursor: pointer;
+   background-color: rgba(98, 226, 226 , 0.9);
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.big {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.big:hover {
+  opacity: 0.2;
+}
+
+
+/* This keeps my work in all media same */
+
+@media (min-width: 600px) {
+    .small:hover img {
+           text-decoration: none;
+position: absolute;
+    display: inline-block;
+top:33%;
+left:50%;
+transform: translate(-50%, -50%);
+    
+    }
+}
+
+
+@media (min-width: 275px) {
+    .small img {
+           text-decoration: none;
+position: absolute;
+    display: inline-block;
+top:33%;
+left:50%;
+transform: translate(-50%, -50%);
+    }
+}
+
+@media (min-width: 120px) {
+    .small img {
+           text-decoration: none;
+position: absolute;
+    display: inline-block;
+top:33%;
+left:50%;
+transform: translate(-50%, -50%);
+    }
+}
+
+@media (min-width: 50px) {
+    .small img {
+           text-decoration: none;
+position: absolute;
+    display: inline-block;
+top:33%;
+left:50%;
+transform: translate(-50%, -50%);
+    }
+}
+
+.header{
+    font-size: 20px;
+    color: white;
+}
+
+
+p {
+      font-size: 15px;
+} 
+a {
+    text-decoration: none;
+    color: var(--cir-White);
+}
+
+.green-1 {
+    color: var(--cir-Cyan-400);
+}
+a:hover {
+    color: var(--cir-Cyan-400);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
